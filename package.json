@@ -1,6 +1,6 @@
 {
   "name": "azspeedtest",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tests the upload speed to Azure blob storage. This takes a URL to a blob container with a SAS in parameter, then tests speed for various scenarios",
   "main": "start.js",
   "scripts": {
