@@ -12,7 +12,7 @@ npm install -g azspeedtest
 
 ## Usage
 
-*Pre-requisite*: Generate a shared access signature for a blob container. The SAS must have write access to the container.
+*Pre-requisite*: Generate a shared access signature for a blob container. The SAS must have write and delete access to the container. Create a container for that purpose.
 It will look like: https://myaccount.blob.core.windows.net/speed-test?st=2018-04-09T12%3A49%3A00Z&se=2018-05-10T12%3A49%3A00Z&sp=rwdl&sv=2017-04-17&sr=c&sig=%2BnH4OrCflkgdldiqjZcLCvHZAFbR19ISrTGLk1oVmPQ%3D`.
 
 ```sh

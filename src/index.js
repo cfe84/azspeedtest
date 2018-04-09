@@ -5,6 +5,7 @@ const deleteBlobAsync = require("./deleteBlobAsync");
 const units = require("./units");
 const runTestAsync = require("./runTestAsync");
 const runParallel = require("./runParallel");
+const os = require("os");
 
 const commands = commandLineParser.parse();
 const containerUrl = commands.options[commandLineParser.commands.CONTAINER_URL]
@@ -58,7 +59,9 @@ const runTestsAsync = async () => {
             chunkCount: chunkCount
         },
         environment: {
-            nodeVersion: process.version
+            nodeVersion: process.version,
+            hostname: os.hostname(),
+            platform: os.platform()
         },
         results: results
     };
